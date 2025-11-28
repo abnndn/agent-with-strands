@@ -12,11 +12,14 @@
 # [Assume IAM role with access to Bedrock models for local testing - assumes for 1 hour]
 # ada credentials update --account=803817916307 --provider=conduit --role=support-agent-poc --once
 #
+# Run the file using command - `python3 basic-use.py`
+#
 # Strands Documentation - https://strandsagents.com/latest/documentation/docs/
 #
 ###########################################################################
 from strands import Agent
 
+# Uses default anthropic claude model in the aws account.
 agent = Agent()
 
 response = agent("What is agentic AI?")
