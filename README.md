@@ -1,16 +1,29 @@
 # agent-with-strands
-###########################################################################
-### Commands to run before running this agent.
-#### [Create python virtual environment]
+
+### Commands to run before running this agent -
+#### Create python virtual environment:
+```
 python3 -m venv venv \
 source venv/bin/activate
-#### [Install strands SDK for agent implmentation]
+```
+
+#### Install strands SDK for agent implmentation:
+```
 pip install strands-agents \
-# pip install strands-agents-tools \
-#### [Assume IAM role with access to Bedrock models for local testing - assumes for 1 hour]
-ada credentials update --account=803817916307 --provider=conduit --role=support-agent-poc --once\
+pip install strands-agents-tools
+```
+
+#### Assume IAM role with access to Bedrock models for local testing - assumes for 1 hour:
+```
+ada credentials update --account=803817916307 --provider=conduit --role=support-agent-poc --once
+```
+
+----------------------------------
 
 #### Strands Documentation - https://strandsagents.com/latest/documentation/docs/
 
+----------------------------------
+
 ##### Follows - https://www.youtube.com/watch?v=NomS2iLTQ64
-###########################################################################
+
+----------------------------------
