@@ -1,4 +1,3 @@
-# agent-with-strands
 ###########################################################################
 # Commands to run before running this agent.
 #
@@ -15,6 +14,9 @@
 #
 # Strands Documentation - https://strandsagents.com/latest/documentation/docs/
 #
-#
-# Follows - https://www.youtube.com/watch?v=NomS2iLTQ64
 ###########################################################################
+from strands import Agent
+
+agent = Agent()
+
+response = agent("What is agentic AI?")
