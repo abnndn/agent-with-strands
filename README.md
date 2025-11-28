@@ -52,7 +52,7 @@ Uses model running locally, through ollama
 Uses uv for dependency management.
 Basic whether agent.
 ```
-brew services start ollama
+[Not needed when running llm model on bedrock agent] brew services start ollama
 curl http://localhost:11434/api/version # confirm if Ollama running, Ollama always runs on this port.
 uv run Lab1/lab1.py
 ```
