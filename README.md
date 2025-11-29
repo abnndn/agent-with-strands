@@ -9,6 +9,11 @@
 - https://github.com/abnndn/strands-agents-copy
 - https://github.com/syedair/strands-agents-labs
 
+Assume IAM Role:
+```
+ada credentials update --account=803817916307 --provider=conduit --role=support-agent-poc --once
+```
+
 Install UV [For ZSH shell]
 ```
 curl -LsSf https://astral.sh/uv/install.sh | sh
