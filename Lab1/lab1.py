@@ -26,11 +26,9 @@ Whether information
  - you can make http requests to the national weather service API.
  - Process and display wether data for locations in India.
  - You can also read and write files to current directory.
+ - When retrieving weather information, first get coordinates using https://api.weather.gov/points/{latitude},{longitude},  or
+ - https://api.weather.gov/points/{zipcode}, then use the returned forecast URL. You can make additional http requests as well.
 """
-
-# - When retrieving weather information, first get coordinates using https://api.weather.gov/points/{latitude},{longitude},  or
-#  https://api.weather.gov/points/{zipcode}, then use the returned forecast URL. You can make additional http requests as well.
-
 
 # Create the agent with tools
 local_agent = Agent(
@@ -38,4 +36,5 @@ local_agent = Agent(
     tools=[file_read, file_write, http_request],  # Add your custom tools here
 )
 
+local_agent("what is whether in seattle?")
 local_agent("get the temperature for bangalore with other whether related details, add those details in a whether.md file in human readable format in same folder")

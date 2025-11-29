@@ -2,6 +2,7 @@
 
 #### Strands Documentation - https://strandsagents.com/latest/documentation/docs/
 
+- Strands tools - https://github.com/strands-agents/tools
 ----------------------------------
 
 ##### Follows 
@@ -53,6 +54,7 @@ python3 Lab0/basic-use.py
 ---------------------------------------
 
 ### Lab 1
+(Contains details for Lab 2 as well)
 Uses model running locally, through ollama
 Uses uv for dependency management.
 Basic whether agent.
@@ -67,3 +69,12 @@ When tried running on chatgpt20GB model, laptop just hanged.
 Finally ended up running it on aws account itself.
 
 ---------------------------------------
+
+### Lab 3
+
+
+
+
+
+
+----------------------------------------
