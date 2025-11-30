@@ -5,11 +5,6 @@
 - Strands tools - https://github.com/strands-agents/tools
 ----------------------------------
 
-##### Follows 
-- https://www.youtube.com/watch?v=NomS2iLTQ64
-- https://github.com/abnndn/strands-agents-copy
-- https://github.com/syedair/strands-agents-labs
-
 Assume IAM Role:
 ```
 ada credentials update --account=803817916307 --provider=conduit --role=support-agent-poc --once
@@ -39,6 +34,18 @@ brew services start ollama   # runs Ollama in background
 Install Dependencies
 ```
 uv sync
+```
+
+----------
+
+Documentation
+```
+##### Follows 
+- https://www.youtube.com/watch?v=NomS2iLTQ64
+- https://github.com/abnndn/strands-agents-copy
+- https://github.com/syedair/strands-agents-labs
+- https://phonetool.amazon.com/users/syedair
+- https://github.com/syedair
 ```
 
 ---------------------------------------
@@ -72,9 +79,28 @@ Finally ended up running it on aws account itself.
 
 ### Lab 3
 
-
-
-
-
+```
+uv run Lab3/lab3.py
+```
+Helps log the execution.
 
 ----------------------------------------
+
+### Lab 4
+```
+uv run Lab4/lab4.py
+```
+Creates a custom tool, which can query duckduckGo search APIs. 
+Also publishes metrics around token usage.
+
+----------------------------------------
+
+### Lab 5
+```
+uv run Lab5/lab5.py
+```
+Integrates with a MCP server. aws documentation mcp server in this case, using stdio.
+
+------------------------------------------
+
+###Lab 6
