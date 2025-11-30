@@ -115,7 +115,7 @@ uv run Lab5/lab5.py
 
 ------------------------------------------
 
-###Lab 6
+### Lab 6
 Created a local MCP server connecting to US's national weather service.
 Call the MCP server though agent.
 
@@ -126,7 +126,7 @@ uv run Lab6/lab6.py
 
 ------------------------------------------
 
-###Lab 7
+### Lab 7
 Created a local MCP server connecting to US's national weather service.
 Call the MCP server though agent. Async streamable response from MCP.
 
@@ -137,7 +137,7 @@ uv run Lab6/lab6.py
 
 ------------------------------------------
 
-###Lab 8 
+### Lab 8 
 Deploying the contents of the Lab5 on remote bedrock agentcore runtime.
 Added bedrock-agent dependencies in pyproject.toml file
 
