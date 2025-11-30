@@ -1,0 +1,54 @@
+default_agent: aws_doc_expert
+agents:
+  aws_doc_expert:
+    name: aws_doc_expert
+    entrypoint: /Users/abhmitta/workspaces/support-poc/Lab8/lab8.py
+    deployment_type: container
+    runtime_type: null
+    platform: linux/arm64
+    container_runtime: none
+    source_path: /Users/abhmitta/workspaces/support-poc/Lab8
+    aws:
+      execution_role: arn:aws:iam::803817916307:role/AmazonBedrockAgentCoreSDKRuntime-us-west-2-90943a190a
+      execution_role_auto_create: false
+      account: '803817916307'
+      region: us-west-2
+      ecr_repository: 803817916307.dkr.ecr.us-west-2.amazonaws.com/bedrock-agentcore-aws_doc_expert
+      ecr_auto_create: false
+      s3_path: null
+      s3_auto_create: false
+      network_configuration:
+        network_mode: PUBLIC
+        network_mode_config: null
+      protocol_configuration:
+        server_protocol: HTTP
+      observability:
+        enabled: true
+      lifecycle_configuration:
+        idle_runtime_session_timeout: null
+        max_lifetime: null
+    bedrock_agentcore:
+      agent_id: aws_doc_expert-y9XIjED9eX
+      agent_arn: arn:aws:bedrock-agentcore:us-west-2:803817916307:runtime/aws_doc_expert-y9XIjED9eX
+      agent_session_id: 1f530313-0405-459f-b8b6-01c8122e03db
+    codebuild:
+      project_name: bedrock-agentcore-aws_doc_expert-builder
+      execution_role: arn:aws:iam::803817916307:role/AmazonBedrockAgentCoreSDKCodeBuild-us-west-2-90943a190a
+      source_bucket: bedrock-agentcore-codebuild-sources-803817916307-us-west-2
+    memory:
+      mode: STM_ONLY
+      memory_id: aws_doc_expert_mem-8Yna4624Cq
+      memory_arn: arn:aws:bedrock-agentcore:us-west-2:803817916307:memory/aws_doc_expert_mem-8Yna4624Cq
+      memory_name: aws_doc_expert_mem
+      event_expiry_days: 30
+      first_invoke_memory_check_done: true
+      was_created_by_toolkit: false
+    identity:
+      credential_providers: []
+      workload: null
+    authorizer_configuration: null
+    request_header_configuration: null
+    oauth_configuration: null
+    api_key_env_var_name: null
+    api_key_credential_provider_name: null
+    is_generated_by_agentcore_create: false
