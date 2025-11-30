@@ -24,4 +24,4 @@ with streamable_http_mcp_client:
         tools = tools
     )
 
-    response = agent("What is the weather in New york city?")
+    agent("What is the weather in New york city?")

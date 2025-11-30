@@ -114,3 +114,13 @@ Call the MCP server though agent.
 
 ------------------------------------------
 
+###Lab 6
+```
+uv run mcp-streamable-http/server/weather.py <Started MCP server>
+uv run Lab6/lab6.py
+```
+
+Created a local MCP server connecting to US's national weather service.
+Call the MCP server though agent. Async streamable response from MCP.
+
+------------------------------------------
